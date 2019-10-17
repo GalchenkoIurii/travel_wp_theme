@@ -1,34 +1,14 @@
-<?php
-/**
- * The template for displaying the footer
- *
- * Contains the closing of the #content div and all content after.
- *
- * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
- *
- * @package cln
- */
+</div> <!-- end #fh5co-main -->
 
-?>
-
-	</div><!-- #content -->
-
-	<footer id="colophon" class="site-footer">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'cln' ) ); ?>">
-				<?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'cln' ), 'WordPress' );
-				?>
-			</a>
-			<span class="sep"> | </span>
-				<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'cln' ), 'cln', '<a href="http://underscores.me/">Underscores.me</a>' );
-				?>
-		</div><!-- .site-info -->
-	</footer><!-- #colophon -->
-</div><!-- #page -->
+<footer id="fh5co-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1 text-center">
+                <p>&copy; STS. All Rights Reserved. <br>Created by <a href="http://smarttsoft.com/" target="_blank">SmartSoft</a> Images: <a href="http://pexels.com/" target="_blank">Pexels</a></p>
+            </div>
+        </div>
+    </div>
+</footer>
 
 <?php wp_footer(); ?>
 
