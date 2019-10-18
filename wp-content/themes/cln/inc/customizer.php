@@ -25,6 +25,22 @@ function cln_customize_register( $wp_customize ) {
 			'render_callback' => 'cln_customize_partial_blogdescription',
 		) );
 	}
+
+	/**
+	 * cln-theme Customizer settings
+	 */
+	$wp_customize->add_section( 'cln_theme_options', array(
+	    'title'    => __( 'Theme Options', 'cln' ),
+        'priority' => 10,
+    ) );
+	$wp_customize->add_setting( 'cln_home_category', array(
+	    'default' => '',
+    ) );
+	$wp_customize->add_control( 'cln_home_category', array(
+	    'label'   => __( 'Category on the Home Page', 'cln' ),
+        'section' => 'cln_theme_options',
+        'type'    => 'text',
+    ) );
 }
 add_action( 'customize_register', 'cln_customize_register' );
 
