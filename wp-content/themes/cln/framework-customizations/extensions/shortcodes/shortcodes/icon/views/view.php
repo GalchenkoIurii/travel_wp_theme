@@ -6,6 +6,9 @@
  * @var array $atts
  */
 ?>
+<?php if ( isset( $atts['url'] ) && $atts['url'] ): ?>
+    <a href="<?php echo esc_attr( $atts['url'] ); ?>">
+<?php endif; ?>
 <span class="fw-icon">
 	<i class="<?php echo esc_attr($atts['icon']); ?>"></i>
 	<?php if (!empty($atts['title'])): ?>
@@ -13,3 +16,6 @@
 		<span class="list-title"><?php echo $atts['title'] ?></span>
 	<?php endif; ?>
 </span>
+<?php if ( isset( $atts['url'] ) && $atts['url'] ): ?>
+    </a>
+<?php endif; ?>

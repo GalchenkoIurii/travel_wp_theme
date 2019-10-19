@@ -8297,3 +8297,12 @@ a > img.fh5co-align-center {
   font-size: 20px;
   margin-right: 10px;
 }
+
+#fh5co-team a {
+  color: #ccc;
+}
+
+#fh5co-team a:hover {
+  text-decoration: none;
+  color: #000;
+}
