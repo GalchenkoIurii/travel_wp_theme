@@ -41,6 +41,7 @@ get_header();
             <?php endif; ?>
             <?php wp_reset_postdata(); ?>
         </div> <!-- end fh5co-portfolio -->
+        <div class="clearfix"></div>
     <?php endif; ?>
 
     <?php if ( have_posts() ): while ( have_posts() ): the_post(); ?>
