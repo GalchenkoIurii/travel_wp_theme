@@ -12,7 +12,8 @@ get_header();
     <?php if ( get_theme_mod( 'cln_home_category' ) ): ?>
         <div id="fh5co-portfolio">
             <?php $query = new WP_Query( array(
-                'category_name' => get_theme_mod( 'cln_home_category' ),
+                'category_name'  => get_theme_mod( 'cln_home_category' ),
+                'posts_per_page' => 4,
             ) ); ?>
 
             <?php if ( $query->have_posts() ):
