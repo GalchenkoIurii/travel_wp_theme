@@ -19,7 +19,9 @@ get_header();
                             <?php get_sidebar(); ?>
                         </div>
                         <div class="col-md-9 col-md-pull-3">
-                            <?php get_template_part( 'template-parts/content', get_post_format() ); ?>
+                            <?php while( have_posts() ) : the_post(); ?>
+                                <?php get_template_part( 'template-parts/content', get_post_format() ); ?>
+                            <?php endwhile; ?>
                         </div>
                     </div>
                 </div>
