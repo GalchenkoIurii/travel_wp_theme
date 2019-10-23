@@ -19,6 +19,5 @@
     <div class="fh5co-portfolio-figure animate-box" style="background-image: url(<?php echo $img_url; ?>);"></div>
     <div class="fh5co-portfolio-description">
         <h2><?php the_title(); ?></h2>
-        STANDARD
         <?php the_content(); ?>
     </div>

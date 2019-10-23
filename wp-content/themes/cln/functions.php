@@ -112,8 +112,8 @@ function cln_widgets_init() {
 		'description'   => esc_html__( 'Add widgets here.', 'cln' ),
 		'before_widget' => '<section id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</section>',
-		'before_title'  => '<h2 class="widget-title">',
-		'after_title'   => '</h2>',
+		'before_title'  => '<h3 class="widget-title">',
+		'after_title'   => '</h3>',
 	) );
 }
 add_action( 'widgets_init', 'cln_widgets_init' );
